@@ -153,6 +153,36 @@ app-navbar {
   }
 }
 
+@media screen and (max-width: 1440px) {
+  #concept {
+    .container {
+      .left {
+        width: 40%;
+        margin-left: 150px;
+        .card {
+          width: 150px;
+          height: 40px;
+          p {
+            font-size: 15px;
+          }
+        }
+        button {
+          font-size: 15px;
+        }
+      }
+      .right {
+        position: absolute;
+        right: 0;
+        margin-right: 150px;
+        .img {
+          width: 450px;
+          height: 450px;
+        }
+      }
+    }
+  }
+}
+
 @media screen and (max-width: 1200px) {
   #home {
     .container {
@@ -167,6 +197,21 @@ app-navbar {
     }
     .content {
       font-size: 18px;
+    }
+  }
+  #concept {
+    .container {
+      .left {
+        width: 40%;
+        margin-left: 100px;
+      }
+      .right {
+        margin-right: 100px;
+        .img {
+          width: 500px;
+          height: 500px;
+        }
+      }
     }
   }
 }
@@ -195,6 +240,24 @@ app-navbar {
       }
     }
   }
+  #concept {
+    height: auto;
+    .container {
+      flex-direction: column;
+      .left {
+        width: 80%;
+        margin: 50px auto;
+        justify-content: center;
+      }
+      .right {
+        display: none;
+        .img {
+          width: 400px;
+          height: 400px;
+        }
+      }
+    }
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -219,6 +282,21 @@ app-navbar {
       margin-top: 30px;
       .avis, .logo, .walker {
         margin: 0 5px;
+      }
+    }
+  }
+  #concept {
+    .container {
+      .left {
+        width: 90%;
+        .card {
+          width: 180px;
+        }
+      }
+      .right {
+        display: none;
+        .img {
+        }
       }
     }
   }
@@ -257,6 +335,27 @@ app-navbar {
             display: none;
           }
         }
+      }
+    }
+  }
+  #concept {
+    .container {
+      height: 80vh;
+      .left {
+        width: 100%;
+        margin: 30px auto;
+        .card {
+          width: 100%;
+          max-width: 250px;
+        }
+        button {
+          width: 100%;
+          max-width: 250px;
+          margin-left: 0;
+        }
+      }
+      .right {
+        display: none;
       }
     }
   }
